@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class=" my-16 mx-10">
+  <div class="bg-gray-100 rounded-lg	 h-full pb-16"> 
+   <h1 class="text-7xl text-rose-700 text-center py-8">Discount Calculator</h1> 
+   
+   
+    <div class="grid grid-cols-2 gap-5  h-80 mx-12 ">
+        
+<section class="bg-rose-300 rounded-lg h-full flex flex-col justify-center">
+<div>
+<input class="p-3 mx-6 my-4 bg-rose-50  block w-4/5" type="number" placeholder="Please enter the price." id="price-field" >
+<input class="p-3 mx-6 mb-4 bg-rose-50 block w-4/5" type="number" placeholder="Please enter the discount." id="discount-field" >
+<input class="p-3 mx-6 mb-4 bg-rose-50 block w-4/5" type="text" placeholder="Please enter DOM to process" id="coupon-field" >
+<button id="btn-discount" class="bg-red-700 hover:bg-rose-600 px-8 py-2 text-2sxl rounded-lg mx-6 text-white font-bold">Apply</button>
+
+</div>
+</section>
+<div class="bg-rose-300 rounded-lg">
+<h1 class="text-3xl text-center mt-12 text-white font-semibold">You saved : <span id="saved-money" class="text-3xl text-center mt-4 text-white"> 00</span></h1>
+<h1 class="text-3xl text-center mt-12 text-white font-semibold">The Price After Discount is :</h1>
+<h2 id="new-price" class="text-3xl text-center mt-4 text-white font-semibold">00
+
+  </div>  
+ </div>
+ <script src="discount.js"></script>  
+</body>
+</html>
